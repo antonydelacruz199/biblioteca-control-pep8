@@ -1,16 +1,26 @@
-from biblioteca import *
+"""
+Librería maestra de gestión de libros (main.py).
+"""
 
-l=liblio("central")
+from biblioteca import Book, Biblioteca
 
-b1=bk("Python","Guido",1)
-b2=bk("Java","Gosling",2)
 
-l.addb(b1)
-l.addb(b2)
+def main() -> None:
+    """Ejecuta una demostración del sistema de biblioteca."""
+    objetoBiblioteca = Biblioteca("central")
 
-l.show()
+    book1 = Book("Python", "Guido", 1)
+    book2 = Book("Java", "Gosling", 2)
 
-print(b1.prest())
-print(b1.prest())
-b1.ret()
-print(b1.prest())
+    objetoBiblioteca.addb(book1)
+    objetoBiblioteca.addb(book2)
+
+    objetoBiblioteca.show()
+
+    print(book1.prest())
+    print(book1.prest())
+    book1.ret()
+    print(book1.prest())
+
+if __name__ == "__main__":
+    main()
