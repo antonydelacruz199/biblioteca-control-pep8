@@ -13,11 +13,11 @@ class Biblioteca:
         self.name = name
         self.libros: list[Book] = []
 
-    def addb(self, book: "Book") -> None:
+    def agregar(self, book: "Book") -> None:
         """Agrega un libro a la biblioteca."""
         self.libros.append(book)
 
-    def show(self) -> None:
+    def mostrar(self) -> None:
         """Muestra en consola la información básica de cada libro."""
         for libro in self.libros:
             print(libro.titulo, libro.autor, libro.indice)

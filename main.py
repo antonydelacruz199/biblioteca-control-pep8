@@ -12,10 +12,10 @@ def main() -> None:
     book1 = Book("Python", "Guido", 1)
     book2 = Book("Java", "Gosling", 2)
 
-    objeto_biblioteca.addb(book1)
-    objeto_biblioteca.addb(book2)
+    objeto_biblioteca.agregar(book1)
+    objeto_biblioteca.agregar(book2)
 
-    objeto_biblioteca.show()
+    objeto_biblioteca.mostrar()
 
     print(f"Primer préstamo de '{book1.titulo}': {book1.lend()}")
     print(f"Segundo préstamo de '{book1.titulo}': {book1.lend()}")
