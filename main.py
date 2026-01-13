@@ -17,10 +17,10 @@ def main() -> None:
 
     objetoBiblioteca.show()
 
-    print(book1.prest())
-    print(book1.prest())
-    book1.ret()
-    print(book1.prest())
+    print(f"Primer préstamo de '{book1.titulo}': {book1.lend()}")
+    print(f"Segundo préstamo de '{book1.titulo}': {book1.lend()}")
+    book1.back()
+    print(f"Préstamo después de devolver '{book1.titulo}': {book1.lend()}")
 
 if __name__ == "__main__":
     main()
